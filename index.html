@@ -6,17 +6,30 @@
 	<meta name="description" content="This is a website on how to get into better shape">
 	<title>Shape up</title>
 
+
+<!--[if lt IE 9]>
+	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
+<![endif]-->
+
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="images/favicon.ico">
 <link rel="stylesheet" href="styles/main.css">
 
 </head>
 <body>
 	<header>
 		<img src="images/shape_up_logo.png" alt="shape_up_logo">
+		<div> 
 		<h2>shape up</h2>
 		<h3>Find the best fit for you!</h3>
-	</header>
-	<main>
-		<h1>Get ready to Shape Up!</h1>
+		</div>
+		</header>
+		<main>
+		
+		<section>
+		
+			<h1>Get ready to Shape Up!</h1>
 <p>How many times have you started a new workout routine or diet? And how many times has it failed to give you the results you want? Now, with the help of this site, you can learn about the exercises and diet that work best for you. We offer personalized programs as well as access to several health and dieting tools. So don't wait! Get started looking and feeling better today.</p>
 
 <p>As fitness expert Amanda Russell said:</p>
@@ -35,16 +48,26 @@
 
 		<h3><a href="diet/index.html">Eat what's right for you</a></h3>
 		<p>Are you really what you eat? Lose weight, gain weight, or just feel great! Maintaining a healthy diet is probably the most important thing you can do to promote overall health.</p>
+	</section>
 
-Additional resources
-Physical activity and health
-Stretching exercises
-Strength training
-Cardiovascular training
-Yoga workout
+	<aside>
+		<h3>Additional resources</h3>
+	<ul>
+		<li><a href="https://www.who.int/health-topics/physical-activity#tab=tab_1">Physical activity and health</a></li>
+		<li><a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/stretching/art-20546848" target="_blank">Stretching exercises</a></li>
+		<li><a href="https://www.self.com/story/8-strength-exercises">Strength training</a></li>
+		<li><a href="https://my.clevelandclinic.org/health/articles/24754-cardiovascular-endurance">Cardiovascular training</a></li>
+		<li><a href="https://www.self.com/story/8-strength-exercises">oga workout</a></li>
+	</ul>
+</aside>
 	</main>
 	<footer>
-		<p>&copy; 2024 Shape Up!</p>
+		<p>&copy; <span id="copyrightyear"></span> Shape Up!</p>
 	</footer>
+
+	<script>
+        const d = new Date();
+        document.getElementById('copyrightyear').innerHTML = d.getFullYear();
+    </script>
 </body>
 </html>
