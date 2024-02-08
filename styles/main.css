@@ -4,7 +4,8 @@
     padding: 0;
 }
 html {
-    background-color: lightsteelblue;
+    background-image: linear-gradient(to bottom right steelblue, white);
+
 }
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -14,11 +15,14 @@ body {
     border: 3px solid steelblue;
     margin: 0 auto;
     background-color: white;
+    box-shadow: 3px 3px 10px 5px grey;
 }
 
 header {
     display: flex;
     align-items: center;
+    border-bottom: 3px solid steelblue;
+    background-image: linear-gradient(white, lightsteelblue);
 }
 
 header div {
@@ -42,6 +46,11 @@ header h2 {
     color: steelblue;
     text-shadow: 2px 2px 5px steelblue;
 }
+
+    h1 {    
+        text-align: center;
+    }
+
 a {
     text-decoration: none;
 }
@@ -53,7 +62,7 @@ section a:hover, section a:active {
     color: steelblue;
     text-decoration: underline;
 }
-    
+    aside {padding-top: 2em;}
 
 section a:hover, section a:active {
     color: steelblue;
@@ -73,12 +82,24 @@ aside a:hover, aside a:active {
     color: maroon;
 }
 
+aside h3 {
+    padding-left: 2em;
+}
+
 aside ul {
-    padding-left: 30px;
+    padding-left: 2em;
 }
 
 aside li {
     line-height: 140%;
+}
+
+main {
+    display: flex;
+}
+
+section{
+    max-width: 70%;
 }
 
 main h2, main h3 {
@@ -90,7 +111,18 @@ main p {
     margin-bottom: 35px;
 }
 
+blockquote {
+    margin: 1em 3.5em 2em;
+    padding: 1em;
+    background-color: rgb(208, 223, 242);
+    border-radius: 5px;
+    border: 1px solid steelblue;
+    box-shadow: 3px 3px 7px 5px lightsteelblue;
+
+}
+
 footer {
+    clear: both;
     background-color: steelblue;
 }
 
