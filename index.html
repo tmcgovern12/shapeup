@@ -11,6 +11,18 @@
 	<script src="bower_components/html5shiv/dist/html5shiv.js"></script>
 <![endif]-->
 
+<!-- SlickNav Links--> 
+
+<link rel="stylesheet" href="styles/slicknav.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="js/jquery.slicknav.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $('#nav_menu').slicknav({prependTo:"#mobilemenu"});
+    });
+</script>
+
 <link rel="stylesheet" href="styles/normalize.css">
 <link rel="stylesheet" href="styles/main.css">
 <link rel="stylesheet" href="images/favicon.ico">
@@ -26,6 +38,7 @@
 		</div>
 		</header>
 
+		<nav id="mobilemenu"></nav>
 		<nav id="nav_menu">
 			<ul>
 				<li><a href="index.html">Home</a></li>

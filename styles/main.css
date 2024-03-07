@@ -34,7 +34,6 @@ header div {
 
 
 main {
-
     clear: both;
 }
 
@@ -244,3 +243,57 @@ footer p{
     font-weight: bold;
     font-variant: small-caps; 
 }
+
+
+/*--------------------------
+
+
+Media Queries
+
+
+--------------------------*/
+
+@media only screen and (max-width: 900px) {
+
+body {
+    box-shadow: none; 
+    font-size: 90%;
+}
+
+
+}
+   
+    @media (max-width: 767px) {
+
+    }
+
+    #mobilmenu{
+        display: none;
+    }
+
+    .slicknav_menu {
+        background-color: steelblue;
+    }
+    
+    #nav_menu {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    section, #nav_list, #asideright {
+        max-width: 95%;
+    }
+    #nav_list {
+        order: 2; 
+        margin-bottom: 1em;
+    }
+
+    @media (maxwidth: 479px) {
+        header {
+            flex-direction: column;
+        }
+
+    }
