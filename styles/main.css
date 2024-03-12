@@ -12,7 +12,7 @@ body {
 
     font-size: 100%;
     max-width: 1200px;
-    border: 3px solid steelblue;
+    border: 3em solid steelblue;
     margin: 0 auto;
     background-color: white;
     box-shadow: 3px 3px 10px 5px grey;
@@ -211,6 +211,10 @@ main h2{
 
 }
 
+main {
+    padding-left: 3em;
+}
+
 
 section h3 {
     padding-bottom: .25em;
@@ -254,46 +258,42 @@ Media Queries
 --------------------------*/
 
 @media only screen and (max-width: 900px) {
-
-body {
-    box-shadow: none; 
-    font-size: 90%;
-}
-
-
-}
+    body {
+        box-shadow: none; 
+        font-size: 90%;
+    }
+   
    
     @media (max-width: 767px) {
+       
+        #mobilmenu {
+            display: none;
+        }
 
-    }
+        .slicknav_menu {
+            background-color: steelblue;
+        }
+        
+        #nav_menu {
+            display: none;
+        }
 
-    #mobilmenu{
-        display: none;
-    }
-
-    .slicknav_menu {
-        background-color: steelblue;
-    }
-    
-    #nav_menu {
-        display: none;
-    }
-
-    main {
-        flex-direction: column;
-    }
-
-    section, #nav_list, #asideright {
-        max-width: 95%;
-    }
-    #nav_list {
-        order: 2; 
-        margin-bottom: 1em;
-    }
-
-    @media (maxwidth: 479px) {
-        header {
+        main {
             flex-direction: column;
         }
 
+        section, #nav_list, #asideright {
+            max-width: 95%;
+        }
+        #nav_list {
+            order: 2; 
+            margin-bottom: 1em;
+        }
+
+        @media (maxwidth: 479px) {
+            header {
+                flex-direction: column;
+            }
+        }
     }
+}
